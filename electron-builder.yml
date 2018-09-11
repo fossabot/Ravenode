@@ -2,7 +2,7 @@ appId: io.museeks.app
 electronVersion: 2.0.8
 directories:
   buildResources: "./dist"
-  output: "./build"
+  output: "./build/production"
 files:
   - dist/**/*
   - src/images/**/*
@@ -20,4 +20,4 @@ linux:
   executableName: museeks
 win:
   target: nsis
-  icon: src/images/logos/museeks.ico
+  icon: src/images/logos/ravenode.ico
