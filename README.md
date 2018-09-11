@@ -1,43 +1,100 @@
-# #Tune
+﻿# museeks
 
-<img src="Logotype primary.png" width="70%" height="70%" />
+[![Build Status](https://img.shields.io/circleci/project/github/KeitIG/museeks.svg)](https://circleci.com/gh/KeitIG/museeks)
+[![Dependencies](https://david-dm.org/KeitIG/museeks.svg)](https://github.com/KeitIG/museeks)
+[![Gitter](https://badges.gitter.im/KeitIG/museeks.svg)](https://gitter.im/KeitIG/museeks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-**Version 1.0.3**
+A simple, clean and cross-platform music player. ([museeks.io](http://museeks.io))
 
-[![License](https://img.shields.io/github/license/MD-AZMAL/Sharp-Tune.svg?style=for-the-badge)](https://github.com/MD-AZMAL/Sharp-Tune)
-[![Github All Releases](https://img.shields.io/github/downloads/MD-AZMAL/Sharp-Tune/total.svg?style=for-the-badge)](https://github.com/MD-AZMAL/Sharp-Tune)
+![Screenshot](screenshot.png)
 
-Lightweight Cross-platform music player build upon the node using the electron framework.
+It uses:
+* [Node.js](https://nodejs.org/en/) for back-end
+* [electron (used to be atom-shell)](https://github.com/atom/electron/) for embedded browser
+* [React.js](https://facebook.github.io/react/) as front-end framework and [Flux](https://facebook.github.io/flux/) with  [Redux](http://redux.js.org/) as data-flow pattern
 
-[Visit on electron](https://electronjs.org/apps/sharp-tune)
+---
 
-## Screenshot
-![Sharp Tune](https://raw.githubusercontent.com/MD-AZMAL/Sharp-Tune/master/ss1.png)
-![Sharp Tune](https://raw.githubusercontent.com/MD-AZMAL/Sharp-Tune/master/ss2.png)
+### Features
 
-# Usage
-## Application
-* Start the Application and select File option in the Application and menu.
-* Select the folder where you have the media files
-* Select one from the List and enjoy!!
+Museeks aims to be a minimalistic and easy to use music player, you will not find tons of features. Here is a little preview though:
 
-## Contribute
-* Clone the repo
-* Navigate to the main folder
-* Open the terminal and use ```npm install``` to install the dependencies
-* ```npm start``` to start the application
+- 💻 Cross-platform music player
+- ✨ Clean and polished
+- 🌟 Playlists
+- 🎼 Queue management
+- ➰ Shuffle, loop
+- 🌄 Covers support
+- 🤓 Dark theme
+- 🚤 Playback speed control
+- 😴 Sleep mode blocker
+- 🔊 Minimize to tray
+- 🎧 Supported formats: mp3, mp4, m4a/aac, flac, wav, ogg, 3gpp
 
-# Features
-* LightWeight 
-* Supports commmon multimedia format
+---
 
-# Whats New!
-* Removed 3rd party dependecy for playing song
-* Used Web Audio API
-* Added Audio Visualiser
+### Releases notes
 
-# Credits
-* Logo: [mansya](https://github.com/mansya)
+- [Over here!](https://github.com/KeitIG/museeks/releases)
 
-# License & Copyright
-&copy; 2018 Md Azmal
+---
+
+### Installation
+
+#### Classic
+
+Builds and installers can be found [on this page](https://github.com/KeitIG/museeks/releases).
+
+#### Build (advanced)
+
+Please consider that **`master` is unstable**.
+
+- `git clone git@github.com:KeitIG/museeks.git`
+- `cd museeks`
+- `npm install`
+- `npm run build` or `npm run dev`
+- `npm run museeks` or `npm run museeks:debug`
+
+---
+
+### Troubleshooting
+
+Museeks is currently in development. This implies some things can break after an update (database schemes changes, config...).
+
+If you encounter freezes when starting the app, you can reset Museeks by following these steps:
+
+- Go to the Museeks folder directory
+    - Windows: `%AppData%\museeks`
+    - OSX: `~/Library/Application Support/museeks`
+    - Linux: `~/.config/museeks/` or `$XDG_CONFIG_HOME/museeks`
+- Delete:
+    - `IndexedDB` folder
+    - `config.json` file
+- Restart Museeks
+
+If you still get problems after that, please open an issue :)
+
+---
+
+### Bug report
+
+If you want to report a bug, first, thanks a lot, that helps us a lot. Please open an issue and mention your OS, your Museeks version, and how to reproduce it. Adding a screen of the console (Settings -> Advanced -> Enable dev mode) is a big help too.
+
+---
+
+### Contribute
+
+- Fork and clone
+- Master is usually unstable, checkout to a tag to have a stable state of the app
+- `npm install && npm run dev` then run in a separate terminal `npm run museeks:debug`
+- `npm run dev` will watch for file changes using Webpack which will recompile JSX and SASS files.
+
+Please respect a few rules:
+
+- Before making complex stuff, don't hesitate to open an issue first to discuss about it
+- Make the code readable and comment if needed
+- Make sure `npm run lint:sass && npm run lint:js` passes
+
+Then open a PR :)
+
+0.10.0
