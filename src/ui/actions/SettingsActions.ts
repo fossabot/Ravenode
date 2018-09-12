@@ -36,7 +36,7 @@ export const checkForUpdate = async (options: UpdateCheckOptions = {}) => {
   const currentVersion = app.version;
 
   try {
-    const response = await fetch('https://api.github.com/repos/KeitIG/museeks/releases');
+    const response = await fetch('https://api.github.com/repos/eligeorgios/ravenode/releases');
     const releases = await response.json();
 
     // TODO Github API types?
@@ -44,16 +44,16 @@ export const checkForUpdate = async (options: UpdateCheckOptions = {}) => {
 
     let message;
     if (newRelease) {
-      message = `Museeks ${newRelease.tag_name} is available, check http://museeks.io!`;
+      message = `Ravenode ${newRelease.tag_name} is available, check github.com/eligeorgios/ravenode/releases!`;
     } else if (!options.silentFail) {
-      message = `Museeks ${currentVersion} is the latest version available.`;
+      message = `Ravenode ${currentVersion} is the latest version available.`;
     }
 
     if (message) {
       ToastsActions.add('success', message);
     }
   } catch (e) {
-    if (!options.silentFail) ToastsActions.add('danger', 'An error occurred while checking updates.');
+    if (!options.silentFail) ToastsActions.add('danger', 'An error occurred while checking updates: ||' + e.message);
   }
 };
 
