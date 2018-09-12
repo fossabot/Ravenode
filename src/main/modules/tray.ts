@@ -10,11 +10,15 @@ import ModuleWindow from './module-window';
 import { TrackModel, PlayerStatus } from '../../shared/types/interfaces';
 
 class TrayModule extends ModuleWindow {
+
+  // <COMMENTS BY DEVELOPER KeitlG
   // Darwin used to be supported, it is now disabled because its usage do not
   // make a lot of sense on this platform, as the icon always stay in the dock
   //
   // 01/04/2018 actually not for now, I do not want to break a feature in a
   // patch release
+
+  //      ;) I aagree with you KietlG
   // this.platforms = ['win32', 'linux'];
 
   protected tray: Electron.Tray | null;
