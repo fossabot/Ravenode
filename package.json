@@ -24,15 +24,17 @@
     "package:l": "build -l --ia32 --x64",
     "package:w": "build -w --ia32 --x64",
     "package:m": "build -m",
+    "create-winstaller": "node ./scripts/installers/winstaller.js",
     "electron-toolkit": "./node_modules/.bin/electron ./node_modules/electron-toolkit"
   },
   "dependencies": {
+    "ajv": "^6.5.3",
     "bluebird": "3.5.1",
-    "popper.js": "^1.14.4",
-    "react": "^16.4.2",
     "bootstrap-css-only": "3.3.7",
     "classnames": "2.2.6",
+    "electron-packager": "^12.1.1",
     "electron-toolkit": "^1.0.24",
+    "electron-winstaller": "^2.6.4",
     "font-awesome": "4.7.0",
     "globby": "8.0.1",
     "history": "4.7.2",
@@ -40,7 +42,9 @@
     "linvodb3": "3.25.1",
     "lodash-es": "4.17.10",
     "music-metadata": "2.6.1",
+    "popper.js": "^1.14.4",
     "queue": "4.5.0",
+    "react": "^16.4.2",
     "react-bootstrap": "0.32.1",
     "react-custom-scrollbars": "4.2.1",
     "react-dom": "16.4.2",
@@ -56,8 +60,7 @@
     "redux-thunk": "2.3.0",
     "semver": "5.5.1",
     "svg-inline-react": "3.1.0",
-    "teeny-conf": "1.1.0",
-    "ajv": "^6.5.3"
+    "teeny-conf": "1.1.0"
   },
   "devDependencies": {
     "@types/bluebird": "3.5.23",
