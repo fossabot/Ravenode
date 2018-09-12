@@ -19,5 +19,6 @@ linux:
     - rpm
   executableName: museeks
 win:
-  target: nsis
+  target: squirrel
+  loadingGif: src/images/logos/ravenode.gif
   icon: src/images/logos/ravenode.ico
