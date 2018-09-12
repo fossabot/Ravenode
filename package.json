@@ -8,18 +8,19 @@
     "type": "git",
     "url": "https://github.com/eligeorgios/ravenode"
   },
-  "author": "Eliyahu Georgios <eli.georgios@gmail.com>, Pierre de la MartiniÃ¨re <pierre.de.la.martiniere@gmail.com>",
+  "author": "Eliyahu Georgios <eli.georgios@gmail.com>, Pierre de la Martinière <pierre.de.la.martiniere@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/KeitIG/museeks/issues"
   },
   "scripts": {
     "build": "webpack --config webpack.prod.js --env.production --progress --colors",
+    "start-dev": "webpack --config webpack.dev.js --progress --colors --watch && ./node_modules/.bin/electron . --enable-logging --devtools",
     "lint:ts": "tslint -p ./tsconfig.json -t stylish",
     "lint:sass": "sass-lint --config .sass-lint.yml -v",
     "dev": "webpack --config webpack.dev.js --progress --colors --watch",
     "ravenode": "./node_modules/.bin/electron .",
-    "ravenode:debug": "./node_modules/.bin/electron . --enable-logging --devtools",
+    "ravenode:dev": "./node_modules/.bin/electron . --enable-logging --devtools",
     "package:lmw": "build -lmw --ia32 --x64",
     "package:l": "build -l --ia32 --x64",
     "package:w": "build -w --ia32 --x64",
