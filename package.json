@@ -26,7 +26,13 @@
     "package:w": "build -w --ia32 --x64 ",
     "package:m": "build -m",
     "create-winstaller": "node ./scripts/installers/winstaller.js",
-    "electron-toolkit": "./node_modules/.bin/electron ./node_modules/electron-toolkit"
+    "electron-toolkit": "./node_modules/.bin/electron ./node_modules/electron-toolkit",
+    "record:help": "terminalizer --help",
+    "record": "terminalizer record",
+    "record:play": "terminalizer play",
+    "record:render": "terminalizer render",
+    "record:config": "terminalizer config"
+
   },
   "dependencies": {
     "ajv": "^6.5.3",
@@ -61,7 +67,8 @@
     "redux-thunk": "2.3.0",
     "semver": "5.5.1",
     "svg-inline-react": "3.1.0",
-    "teeny-conf": "1.1.0"
+    "teeny-conf": "1.1.0",
+    "terminalizer": "^0.2.11"
   },
   "devDependencies": {
     "@types/bluebird": "3.5.23",

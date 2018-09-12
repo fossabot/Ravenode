@@ -20,5 +20,4 @@ linux:
   executableName: museeks
 win:
   target: squirrel
-  loadingGif: src/images/logos/ravenode.gif
   icon: src/images/logos/ravenode.ico
