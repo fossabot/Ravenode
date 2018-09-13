@@ -10,14 +10,25 @@ mac:
   category: public.app-category.music
   target:
   - dmg
-  icon: src/images/logos/museeks.icns
+  - pkg
+  - mas
+  icon: src/images/logos/ravenode.icns
 linux:
   category: AudioVideo
   target:
     - deb
-    - AppImage
     - rpm
-  executableName: museeks
+    - snap
+    - appimage
+  executableName: ravenode-install
 win:
-  target: squirrel
+  target: 
+    - squirrel
+    - nsis
+    - portable
+    - msi
+    - zip
+    - 7z
+    - tar.gz
+  asar: false
   icon: src/images/logos/ravenode.ico
