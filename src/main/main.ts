@@ -22,14 +22,21 @@ const uiDistPath = path.join(appRoot, 'dist/ui');
 // be closed automatically when the javascript object is GCed.
 let mainWindow: Electron.BrowserWindow | null = null;
 
+
+// eligeorgios: I think I understand why the Museeks devs would want on a single
+// instance app, but it causes trouble when I am listening to music with Ravenode
+// already and I try to run Ravenode with NPM. So I commented this section out.
+
 // Make the app a single-instance app
 const shouldQuit = app.makeSingleInstance(() => {
   // Someone tried to run a second instance, we should focus our window.
   if (mainWindow) {
-    if (mainWindow.isMinimized()) mainWindow.restore();
-    mainWindow.show();
-    mainWindow.focus();
-  }
+    if (mainWindow.isMinimized()) 
+       mainWindow.restore();
+       mainWindow.show();
+       mainWindow.focus();
+    }
+    else {}
 });
 
 if (shouldQuit) {
