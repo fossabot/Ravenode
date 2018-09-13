@@ -86,6 +86,6 @@ Promise.promisifyAll(models.Playlist);
 |--------------------------------------------------------------------------
 */
 
-export const version = app.getVersion(); // Museeks version
+export const version = app.getVersion(); // Ravenode version
 export const config = conf; // teeny-conf
 export const initialConfig = conf.getAll(); // the config at the start of the application
