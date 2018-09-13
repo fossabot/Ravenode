@@ -1,7 +1,7 @@
 var electronInstaller = require('electron-winstaller');
 
 resultPromise = electronInstaller.createWindowsInstaller({
-    appDirectory: './dist/win-unpacked/',
+    appDirectory: './build/production/win-unpacked/',
     outputDirectory: './build/production/winstaller/',
     authors: 'The Legion of the Desperate Programmers',
     setupExe: 'ravenode-setup.exe',
