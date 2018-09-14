@@ -23,7 +23,7 @@ export default class SettingsAbout extends React.Component {
             <ExternalLink href='http://github.com/eligeorgios/ravenode'>Ravenode Repository</ExternalLink>{ ' - ' }<ExternalLink href='http://museeks.io'>Museeks.io</ExternalLink>
 
             { ' - ' }
-            <ExternalLink href={`https://github.com/KeitIG/Museeks/releases/tag/$
+            <ExternalLink href={`https://github.com/eligeorgios/ravenode/releases/tag/$
             {app.version}`}>Release Notes</ExternalLink>
           </p>
           <Button
