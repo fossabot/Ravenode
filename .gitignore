@@ -29,9 +29,6 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/production
-
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -48,9 +45,6 @@ typings/
 # Optional REPL history
 .node_repl_history
 
-# Output of 'npm pack'
-*.tgz
-
 
 # Yarn Integrity file
 .yarn-integrity
@@ -58,8 +52,8 @@ typings/
 # dotenv environment variables file
 .env
 
-dist/
 cache/
-build/
+build/previous_versions/
+build/production/
 
 .DS_Store
