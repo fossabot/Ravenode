@@ -115,15 +115,4 @@
         "webpack-cli": "3.1.0",
         "webpack-merge": "4.1.4"
     },
-    "build": {
-        "publish": {
-            "provider": "github",
-            "repo": "https://github.com/eligeorgios/ravenode",
-            "owner": "https://github.com/eligeorgios",
-            "token": "abcd",
-            "vPrefixedTagName": true,
-            "releaseType": "release",
-            "private": false
-        }
-    }
 }
