@@ -55,5 +55,6 @@ typings/
 cache/
 build/previous_versions/
 build/production/
+build/win_unpacked
 
 .DS_Store
