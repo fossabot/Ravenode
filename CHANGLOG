@@ -1,0 +1,22 @@
+CHANGLOG
+
+Ravenode(1.1.5)		{
+	@eligeorgios 
+		- Changed 'release notes' link in Settings/About   
+
+	@eligeorgios 
+		- Fixed a typo in the Settings/About view     
+
+	@eligeorgios 
+		- Changed messages in playlist view     
+
+	@eligeorgios 
+		- Removed some obsolete code     
+
+	@eligeorgios 
+		- Increased height of track progress bar 
+
+	@eligeorgios 
+		- Moved link to Museeks.io in Settings/About to forked notice. 
+}    
+    
