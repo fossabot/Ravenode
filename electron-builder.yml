@@ -23,12 +23,9 @@ linux:
   executableName: ravenode-install
 win:
   target: 
-    - squirrel
     - nsis
     - portable
     - msi
     - zip
-    - 7z
     - tar.gz
-  asar: false
   icon: src/images/logos/ravenode.ico
