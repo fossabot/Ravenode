@@ -39,7 +39,7 @@ export default class SettingsAbout extends React.Component {
             <p>
               Made with lots of <span className='heart'>♥</span> by Eliyahu Georgios (<ExternalLink href='http://github.com/eligeorgios/'>eligeorgios</ExternalLink>), Pierre de la Martinière
               (<ExternalLink href='http://pierrevanmart.com'>KeitIG</ExternalLink>),
-              and a bunch of <ExternalLink href='https://github.com/KeitIG/museeks/graphs/contributors'>great developers over at Github.</ExternalLink>.
+              and a bunch of <ExternalLink href='https://github.com/KeitIG/museeks/graphs/contributors'>great developers over at Github</ExternalLink>.
             </p>
            <br />
           </div>
