@@ -65,16 +65,10 @@ class Playlists extends React.Component<Props> {
     const { playlists } = this.props;
     let playlistContent;
 
-    /* if (playlists === null) {
+    if (playlists.length === 0) {
       playlistContent = (
         <FullViewMessage>
-          <p>Loading playlists</p>
-        </FullViewMessage>
-      );
-    } else */ if (playlists.length === 0) {
-      playlistContent = (
-        <FullViewMessage>
-          <p>You haven{"'"}t created any playlist yet</p>
+          <p>You don{"'"}t have any playlists yet!</p>
           <p className='sub-message'>
             <button
               onClick={this.createPlaylist}
