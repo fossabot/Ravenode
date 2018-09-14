@@ -1,7 +1,7 @@
 {
     "name": "ravenode",
     "productName": "Ravenode",
-    "version": "2.0.8",
+    "version": "1.1.5",
     "description": "A simple, clean and cross-platform music player, written with Node.js, Electron and React.js. Forked from museeks.io.",
     "main": "./dist/main/bundle.js",
     "repository": {
@@ -21,7 +21,7 @@
         "dev": "webpack --config webpack.dev.js --progress --colors --watch",
         "ravenode": "./node_modules/.bin/electron .",
         "ravenode:dev": "./node_modules/.bin/electron . --enable-logging --devtools",
-        "package:lmw": "build -lmw --ia32 --x64",
+        "package:lw": "build -lw --ia32 --x64",
         "package:l": "build -l --ia32 --x64",
         "package:w": "build -w --ia32 --x64  && copy LICENSE build/production/win-unpacked/",
         "package:d": "electron-builder --dir",
@@ -114,5 +114,5 @@
         "webpack": "4.17.1",
         "webpack-cli": "3.1.0",
         "webpack-merge": "4.1.4"
-    },
+    }
 }
