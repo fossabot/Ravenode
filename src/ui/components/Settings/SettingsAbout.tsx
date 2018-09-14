@@ -18,9 +18,9 @@ export default class SettingsAbout extends React.Component {
       <div className='setting setting-about'>
         <div className='setting-section'>
           <h4>About Ravenode</h4>
-          <p>Ravenode was forked from Museeks.io on September 10, 2018.</p>
+          <p>Ravenode was forked from <ExternalLink href='http://museeks.io'>Museeks.io</ExternalLink> on September 10, 2018.</p>
           <p>Ravenode { app.version }{ ' - ' }
-            <ExternalLink href='http://github.com/eligeorgios/ravenode'>Ravenode Repository</ExternalLink>{ ' - ' }<ExternalLink href='http://museeks.io'>Museeks.io</ExternalLink>
+            <ExternalLink href='http://github.com/eligeorgios/ravenode'>Ravenode Repository</ExternalLink> 
 
             { ' - ' }
             <ExternalLink href={`https://github.com/eligeorgios/ravenode/releases/tag/$
