@@ -1,6 +1,6 @@
 ﻿# museeks
 
-[![Build Status](https://img.shields.io/circleci/project/github/KeitIG/museeks.svg)](https://circleci.com/gh/KeitIG/museeks)
+[![Build Status](https://travis-ci.org/eligeorgios/Ravenode.svg?branch=master)](https://travis-ci.org/eligeorgios/Ravenode)
 [![Dependencies](https://david-dm.org/KeitIG/museeks.svg)](https://github.com/KeitIG/museeks)
 [![Gitter](https://badges.gitter.im/KeitIG/museeks.svg)](https://gitter.im/KeitIG/museeks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
