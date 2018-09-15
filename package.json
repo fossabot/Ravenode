@@ -11,37 +11,33 @@
     "author": "Eliyahu Georgios <eli.georgios@gmail.com>, Pierre de la Martini�re <pierre.de.la.martiniere@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/KeitIG/museeks/issues"
+        "url": "https://github.com/eligeorgios/ravenode/issues"
     },
     "scripts": {
         "build": "webpack --config webpack.prod.js --env.production --progress --colors",
-        "start-dev": "webpack --config webpack.dev.js --progress --colors --watch && ./node_modules/.bin/electron . --enable-logging --devtools",
+        "dev": "webpack --config webpack.dev.js --progress --colors --watch",
+
         "lint:ts": "tslint -p ./tsconfig.json -t stylish",
         "lint:sass": "sass-lint --config .sass-lint.yml -v",
-        "dev": "webpack --config webpack.dev.js --progress --colors --watch",
+
         "ravenode": "./node_modules/.bin/electron .",
         "ravenode:dev": "./node_modules/.bin/electron . --enable-logging --devtools",
-        "package:wl": "build -wl --ia32 --x64",
-        "package:l": "build -l --ia32 --x64",
-        "package:w": "build -w --ia32 --x64  && copy LICENSE build/production/win-unpacked/",
-        "package:d": "electron-builder --dir",
-        "package:m": "build -m",
-        "create-winstaller": "node ./scripts/installers/winstaller.js",
-        "electron-toolkit": "./node_modules/.bin/electron ./node_modules/electron-toolkit",
-        "record:help": "terminalizer --help",
-        "record": "terminalizer record",
-        "record:play": "terminalizer play",
-        "record:render": "terminalizer render",
-        "record:config": "terminalizer config"
+
+        "package:l": "electron-packager . ravenode --overwrite --asar=true --platform=linux --arch=x64 --icon=src/images/logos/ravenode.png --prune=true --out=build/production-linux/",
+        "package:w": "build -w --ia32 --x64",
+        "package:m": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/images/logos/ravenode.icns --prune=true --out=dist/darwin/",
+
+        "install:w": "node ./scripts/installers/winstaller.js",
+        "install:m": "electron-installer-dmg ./build/production-darwin/Ravenode-darwin-x64/Ravenode.app ravenode-macos-setup --out=./build/production-darwin/ --icon=./src/images/logos/ravenode.icns --debug --overwrite",
+
+        "electron-toolkit": "./node_modules/.bin/electron ./node_modules/electron-toolkit"
     },
     "dependencies": {
         "ajv": "^6.5.3",
         "bluebird": "3.5.1",
         "bootstrap-css-only": "3.3.7",
         "classnames": "2.2.6",
-        "electron-packager": "^12.1.1",
         "electron-toolkit": "^1.0.24",
-        "electron-winstaller": "^2.6.4",
         "font-awesome": "4.7.0",
         "globby": "8.0.1",
         "history": "4.7.2",
@@ -68,7 +64,8 @@
         "semver": "5.5.1",
         "svg-inline-react": "3.1.0",
         "teeny-conf": "1.1.0",
-        "terminalizer": "^0.2.11"
+        "terminalizer": "^0.2.11",
+        "travis": "^0.1.1"
     },
     "devDependencies": {
         "@types/bluebird": "3.5.23",
@@ -92,6 +89,8 @@
         "electron": "2.0.8",
         "electron-builder": "20.28.2",
         "electron-builder-squirrel-windows": "^20.28.3",
+        "electron-installer-dmg": "^2.0.0",
+        "electron-packager": "^12.1.2",
         "file-loader": "2.0.0",
         "html-webpack-plugin": "3.2.0",
         "install": "0.12.1",
