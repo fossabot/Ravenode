@@ -14,7 +14,7 @@ const uiConfig = {
     main: ['./src/ui/main.tsx'],
   },
   output: {
-    path: `${__dirname}/dist/ui`,
+    path: `${__dirname}/dist/win32/ui`,
     filename: 'bundle.js',
     publicPath: './',
   },
@@ -25,7 +25,7 @@ const uiConfig = {
       chunkFilename: '[id].css',
     }),
     new HtmlWebpackPlugin({
-      title: 'Museeks',
+      title: 'Ravenode',
       template: 'src/app.html',
     }),
   ]
@@ -39,7 +39,7 @@ const mainConfig = {
     main: ['./src/main/main.ts'],
   },
   output: {
-    path: `${__dirname}/dist/main`,
+    path: `${__dirname}/dist/win32/main`,
     filename: 'bundle.js',
     publicPath: './',
   },
