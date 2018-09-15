@@ -23,9 +23,9 @@
         "ravenode": "./node_modules/.bin/electron .",
         "ravenode:dev": "./node_modules/.bin/electron . --enable-logging --devtools",
 
-        "package:l": "electron-packager . ravenode --overwrite --asar=true --platform=linux --arch=x64 --icon=src/images/logos/ravenode.png --prune=true --out=build/production-linux/",
+        "package:l": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=src/images/logos/ravenode.png --prune=true --out=build/production-linux/",
         "package:w": "build -w --ia32 --x64",
-        "package:m": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/images/logos/ravenode.icns --prune=true --out=dist/darwin/",
+        "package:m": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/images/logos/ravenode.icns --prune=true --out=build/production-linux/",
 
         "install:w": "node ./scripts/installers/winstaller.js",
         "install:m": "electron-installer-dmg ./build/production-darwin/Ravenode-darwin-x64/Ravenode.app ravenode-macos-setup --out=./build/production-darwin/ --icon=./src/images/logos/ravenode.icns --debug --overwrite",
