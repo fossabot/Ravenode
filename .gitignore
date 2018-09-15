@@ -55,6 +55,8 @@ typings/
 cache/
 build/previous_versions/
 build/production/
+build/production-darwin/
+build/production-linux/
 build/win-unpacked
 dist/
 
