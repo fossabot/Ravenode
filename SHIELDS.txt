@@ -8,3 +8,12 @@ dependencies status
 
 devDependencies status
 [![devDependencies Status](https://david-dm.org/eligeorgios/ravenode/dev-status.svg)](https://david-dm.org/eligeorgios/ravenode?type=dev)
+
+
+code size 
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)](https://github.com/eligeorgios/Ravenode/)
+
+
+repo size
+
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg)](https://github.com/eligeorgios/Ravenode/)
