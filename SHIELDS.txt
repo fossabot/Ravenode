@@ -1,0 +1,10 @@
+build status
+[![Build Status](https://travis-ci.org/eligeorgios/Ravenode.svg?branch=master)](https://travis-ci.org/eligeorgios/Ravenode)
+
+
+dependencies status
+[![dependencies Status](https://david-dm.org/eligeorgios/ravenode/status.svg)](https://david-dm.org/eligeorgios/ravenode)
+
+
+devDependencies status
+[![devDependencies Status](https://david-dm.org/eligeorgios/ravenode/dev-status.svg)](https://david-dm.org/eligeorgios/ravenode?type=dev)
