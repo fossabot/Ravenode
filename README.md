@@ -1,4 +1,4 @@
-﻿# museeks
+﻿# Ravenode
 
 [![Build Status](https://travis-ci.org/eligeorgios/Ravenode.svg?branch=master)](https://travis-ci.org/eligeorgios/Ravenode)
 [![dependencies Status](https://david-dm.org/eligeorgios/ravenode/status.svg)](https://david-dm.org/eligeorgios/ravenode)
@@ -8,7 +8,7 @@
 
 A minimalist music player forked from Museeks.io
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/eligeorgios/Ravenode/blob/master/docs/images/About.png)
 
 It uses:
 * [Node.js](https://nodejs.org/en/) as its javascript runtime,
