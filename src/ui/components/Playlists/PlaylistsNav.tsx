@@ -7,6 +7,8 @@ import * as PlaylistsActions from '../../actions/PlaylistsActions';
 
 import PlaylistsNavLink from './PlaylistsNavLink';
 import { PlaylistModel } from '../../../shared/types/interfaces';
+import * as ToastsActions from '../../actions/ToastsActions';
+
 
 const { Menu } = electron.remote;
 
@@ -63,6 +65,16 @@ class PlaylistsNav extends React.Component<Props, State> {
   async createPlaylist () {
     // Todo 'new playlist 1', 'new playlist 2' ...
     await PlaylistsActions.create('New playlist', true);
+  }
+
+  async refreshPlaylist () {
+      await PlaylistsActions.refresh();
+      try {
+          ToastsActions.add('success', 'Successfully refreshed playlists');
+      }
+      catch (e) {
+          ToastsActions.add('danger', 'Something happened. Please report this message:' +  e.message);
+      }
   }
 
   async rename (_id: string, name: string) {
@@ -147,6 +159,12 @@ class PlaylistsNav extends React.Component<Props, State> {
               <Icon name='plus' />
             </Button>
           </ButtonGroup>
+          <ButtonGroup className='playlists-management'>
+            <Button bsStyle='link' bsSize='xs' onClick={this.refreshPlaylist}>
+              <Icon type="foundation" name='refresh' />
+            </Button>
+          </ButtonGroup>
+
         </div>
       </div>
     );
@@ -154,3 +172,4 @@ class PlaylistsNav extends React.Component<Props, State> {
 }
 
 export default PlaylistsNav;
+
