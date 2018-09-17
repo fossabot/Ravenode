@@ -16,20 +16,15 @@
     "scripts": {
         "build": "webpack --config webpack.prod.js --env.production --progress --colors",
         "dev": "webpack --config webpack.dev.js --progress --colors --watch",
-
         "lint:ts": "tslint -p ./tsconfig.json -t stylish",
         "lint:sass": "sass-lint --config .sass-lint.yml -v",
-
         "ravenode": "./node_modules/.bin/electron .",
         "ravenode:dev": "./node_modules/.bin/electron . --enable-logging --devtools",
-
         "package:l": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=src/images/logos/ravenode.png --prune=true --out=build/production-linux/",
         "package:w": "build -w --ia32 --x64",
         "package:m": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/images/logos/ravenode.icns --prune=true --out=build/production-linux/",
-
         "installer:w": "node ./scripts/installers/winstaller.js",
         "installer:m": "electron-installer-dmg ./build/production-darwin/Ravenode-darwin-x64/Ravenode.app ravenode-macos-setup --out=./build/production-darwin/ --icon=./src/images/logos/ravenode.icns --debug --overwrite",
-
         "electron-toolkit": "./node_modules/.bin/electron ./node_modules/electron-toolkit"
     },
     "dependencies": {
@@ -47,7 +42,6 @@
         "music-metadata": "2.6.1",
         "popper.js": "^1.14.4",
         "queue": "4.5.0",
-        "react": "^16.4.2",
         "react-bootstrap": "0.32.1",
         "react-custom-scrollbars": "4.2.1",
         "react-dom": "16.4.2",
@@ -97,7 +91,7 @@
         "mini-css-extract-plugin": "0.4.2",
         "node-sass": "4.9.3",
         "popper.js": "^1.14.4",
-        "react": "^16.4.2",
+        "react": "^16.5.1",
         "redux-logger": "3.0.6",
         "sass-lint": "1.12.1",
         "sass-loader": "7.1.0",
