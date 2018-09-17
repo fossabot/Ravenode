@@ -56,8 +56,6 @@ class Playlist extends React.Component<Props> {
         <FullViewMessage>
           <p>This playlist is empty</p>
           <p className='sub-message'>You can add some tracks from the <Link to='/library'>library view</Link>.</p>
-<p className='sub-message'>Click on another playlist to refresh the this list.</p>
-
         </FullViewMessage>
       );
     }
@@ -65,7 +63,7 @@ class Playlist extends React.Component<Props> {
     if (tracks.length === 0) {
       return (
         <FullViewMessage>
-          <p>Oops! We didn't find any tracks from your search.</p>
+          <p>Oops! There aren't any tracks here.</p>
         </FullViewMessage>
       );
     }
@@ -76,8 +74,6 @@ class Playlist extends React.Component<Props> {
         <FullViewMessage>
           <p>This playlist is empty</p>
           <p className='sub-message'>You can add some tracks from the <Link to='/library'>library view</Link> by right-clicking and selecting {"'"}Add to playlist{"'"}.</p>
-<p className='sub-message'>Click on another playlist to refresh the list. </p>
-
         </FullViewMessage>
       );
     }
