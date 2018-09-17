@@ -27,8 +27,8 @@
         "package:w": "build -w --ia32 --x64",
         "package:m": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/images/logos/ravenode.icns --prune=true --out=build/production-linux/",
 
-        "install:w": "node ./scripts/installers/winstaller.js",
-        "install:m": "electron-installer-dmg ./build/production-darwin/Ravenode-darwin-x64/Ravenode.app ravenode-macos-setup --out=./build/production-darwin/ --icon=./src/images/logos/ravenode.icns --debug --overwrite",
+        "installer:w": "node ./scripts/installers/winstaller.js",
+        "installer:m": "electron-installer-dmg ./build/production-darwin/Ravenode-darwin-x64/Ravenode.app ravenode-macos-setup --out=./build/production-darwin/ --icon=./src/images/logos/ravenode.icns --debug --overwrite",
 
         "electron-toolkit": "./node_modules/.bin/electron ./node_modules/electron-toolkit"
     },
