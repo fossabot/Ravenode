@@ -36,7 +36,7 @@ export const checkForUpdate = async (options: UpdateCheckOptions = {}) => {
   const currentVersion = app.version;
 
   try {
-    const response = await fetch('https://api.github.com/repos/eligeorgios/ravenode/releases');
+    const response = await fetch('https://api.github.com/repos/Kiedtl/ravenode/releases');
     const releases = await response.json();
 
     // TODO Github API types?
@@ -44,7 +44,7 @@ export const checkForUpdate = async (options: UpdateCheckOptions = {}) => {
 
     let message;
     if (newRelease) {
-      message = `Ravenode ${newRelease.tag_name} is available, check github.com/eligeorgios/ravenode/releases!`;
+      message = `Ravenode ${newRelease.tag_name} is available, check github.com/Kiedtl/ravenode/releases!`;
     } else if (!options.silentFail) {
       message = `Ravenode ${currentVersion} is the latest version available.`;
     }

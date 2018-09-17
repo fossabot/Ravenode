@@ -20,11 +20,10 @@ export default class SettingsAbout extends React.Component {
           <h4>About Ravenode</h4>
           <p>Ravenode was forked from <ExternalLink href='http://museeks.io'>Museeks.io</ExternalLink> on September 10, 2018.</p>
           <p>Ravenode { app.version }{ ' - ' }
-            <ExternalLink href='http://github.com/eligeorgios/ravenode'>Ravenode Repository</ExternalLink> 
+            <ExternalLink href='http://github.com/Kiedtl/ravenode'>Ravenode Repository</ExternalLink> 
 
             { ' - ' }
-            <ExternalLink href={`https://github.com/eligeorgios/ravenode/releases/tag/$
-            {app.version}`}>Release Notes</ExternalLink>
+            <ExternalLink href={`https://github.com/Kiedtl/ravenode/releases/tag/${app.version}`}>Release Notes</ExternalLink>
           </p>
           <Button
             bsSize='small' className='update-checker'
@@ -37,9 +36,9 @@ export default class SettingsAbout extends React.Component {
           <h4>Contributors</h4>
           <div className='contributors-list'>
             <p>
-              Made with lots of <span className='heart'>♥</span> by Eliyahu Georgios (<ExternalLink href='http://github.com/eligeorgios/'>eligeorgios</ExternalLink>), Pierre de la Martinière
-              (<ExternalLink href='http://pierrevanmart.com'>KeitIG</ExternalLink>),
-              and a bunch of <ExternalLink href='https://github.com/KeitIG/museeks/graphs/contributors'>great developers over at Github</ExternalLink>.
+              Made with lots of <span className='heart'>♥</span> by Eliyahu Georgios (<ExternalLink href='http://github.com/Kiedtl/'>Kiedtl</ExternalLink>), Pierre de la Martinière
+              (<ExternalLink href='http://pierrevanmart.com'>martpie</ExternalLink>),
+              and a bunch of <ExternalLink href='https://github.com/martpie/museeks/graphs/contributors'>great developers on Github</ExternalLink>.
             </p>
            <br />
           </div>
@@ -48,8 +47,8 @@ export default class SettingsAbout extends React.Component {
           <h4>Report issue / Ask for a feature</h4>
           <div className='contributors-list'>
             <p>
-              Although Ravenode/Museeks is mostly stable, there are still a few bugs buried somewhere in the haystack. Don't hesitate to report them or to ask for features you would like
-               using our <ExternalLink href='http://github.com/eligeorgios/ravenode/issues'>bug tracker</ExternalLink>.
+              Although Ravenode is mostly stable, there are still a few bugs buried somewhere in the haystack. Don't hesitate to report them or to ask for features you would like
+               using our <ExternalLink href='http://github.com/Kiedtl/ravenode/issues'>bug tracker</ExternalLink>.
             </p>
          <br />
           </div>
