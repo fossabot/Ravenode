@@ -14,7 +14,7 @@ const uiConfig = {
     main: ['./src/ui/main.tsx'],
   },
   output: {
-    path: `${__dirname}/dist/win32/ui`,
+    path: `${__dirname}/dist/ui`,
     filename: 'bundle.js',
     publicPath: './',
   },
@@ -39,7 +39,7 @@ const mainConfig = {
     main: ['./src/main/main.ts'],
   },
   output: {
-    path: `${__dirname}/dist/win32/main`,
+    path: `${__dirname}/dist/main`,
     filename: 'bundle.js',
     publicPath: './',
   },
