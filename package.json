@@ -1,7 +1,7 @@
 {
     "name": "ravenode",
     "productName": "Ravenode",
-    "version": "1.1.5",
+    "version": "1.2.0",
     "description": "A simple, clean and cross-platform music player, written with Node.js, Electron and React.js. Forked from museeks.io.",
     "main": "./dist/main/bundle.js",
     "repository": {
