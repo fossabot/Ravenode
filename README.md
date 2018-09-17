@@ -1,4 +1,4 @@
-﻿# Ravenode
+# Ravenode
 
 [![Build Status](https://travis-ci.org/eligeorgios/Ravenode.svg?branch=master)](https://travis-ci.org/eligeorgios/Ravenode)
 [![dependencies Status](https://david-dm.org/eligeorgios/ravenode/status.svg)](https://david-dm.org/eligeorgios/ravenode)
@@ -22,7 +22,7 @@ It uses:
 
 ### What's inside?
 
-Because Ravenode is meant to be a minimalistic music player, **you'll find some functionality, but no fancy features.** Here is a incomplete list of some of the features you''l find inside Ravenode
+Because Ravenode is meant to be a minimalistic music player, **you'll find some functionality, but no fancy features.** Here is a incomplete list of some of the features you''l find inside Ravenode.
 
 - ✨ Minimalistic and clean
 - 🌟 Playlists management
@@ -40,7 +40,7 @@ Special thanks to the creators of [Museeks](https://museeks.io/) for coding thes
 
 ### Releases notes
 
-- [Over here!](https://github.com/eligeorgios/ravenode/releases)
+- [On this page.](https://github.com/eligeorgios/ravenode/releases)
 
 ---
 
@@ -56,19 +56,19 @@ Remember that __branch `master` is unstable__ and may contain unfinished chunks 
 
 - Install [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com).
 
-#### 🏗 Building 
+#### 🏗 Building
 
 Open the command line and type:
 - `cd <YOUR PROJECTS DIR>`
 - `git clone https://github.com/eligeorgios/ravenode.git`
 - `cd ravenode`
 - `npm i`
-- `npm run build` (for production) or `npm run dev` (for development)
-- `npm run ravenode` or `npm run museeks:dev`
+- `npm run build` (for production) or `npm run dev` (for development, see __Contributing__)
+- `npm run ravenode` or `npm run museeks:dev` (the script `ravenode:dev` enables dev tools and logging for development.)
 
 #### Packaging
 
-Assuming that you already followed the steps in section __Building__ and you already have a directory stuffed with all the Ravenode source files, you can use the below steps to package and create and installer for Ravenode.
+Assuming that you have already followed the steps in section __?? Building__ and you already have a directory stuffed with all the Ravenode source files, you can use the below steps to package and create the installer for Ravenode.
 
 ##### Windows
 
@@ -84,26 +84,26 @@ Open the command line and type:
 - `cd ravenode` (Go to project directory)
 - `npm i electron-packager`
 - `npm run package:m` (Only packages Ravenode, does not create the installer)
+- `npm i electron-installer-dmg`
 - `npm run installer:m` (MUST be run on a computer running Mac OS X)
 
 ---
 
 ### Troubleshooting
 
-Museeks is currently in development. This implies some things can break after an update (database schemes changes, config...).
-
-If you encounter freezes when starting the app, you can reset Museeks by following these steps:
+*__Warning:__ This will completely reset your music library. After following these steps you will have to re-add your music and re-create your playlists.*
+Occasionally we may change somehting in a new release, and that may cause Ravenode to freeze on startup. Follow these steps to fix Ravenode. 
 
 - Go to the Museeks folder directory
-    - Windows: `%AppData%\museeks`
-    - OSX: `~/Library/Application Support/museeks`
-    - Linux: `~/.config/museeks/` or `$XDG_CONFIG_HOME/museeks`
+    - Windows: `%AppData%\ravenode`
+    - OSX: `~/Library/Application Support/ravenode`
+    - Linux: `~/.config/ravenode/` or `$XDG_CONFIG_HOME/ravenode`
 - Delete:
     - `IndexedDB` folder
     - `config.json` file
-- Restart Museeks
+- Restart Ravenode
 
-If you still get problems after that, please open an issue :)
+If Ravenode continues to freeze, please [open an issue](https://github.com/eligeorgios/ravenode/issues) describing your problem.
 
 ---
 
@@ -113,19 +113,20 @@ If you want to report a bug, first, thanks a lot, that helps us a lot. Please op
 
 ---
 
-### Contribute
+### Rules for contributing
 
 - Fork and clone
-- Master is usually unstable, checkout to a tag to have a stable state of the app
-- `npm install && npm run dev` then run in a separate terminal `npm run museeks:debug`
-- `npm run dev` will watch for file changes using Webpack which will recompile JSX and SASS files.
+- Always checkout to a stable tag of Ravenode, since branch master is ~~normally~~ always unstable.
+- In a new terminal windows, cd to the Ravenode directory and run `npm i` and then `npm run dev`
+- To start Ravenode, run **in a separate terminal window** `npm run ravenode:dev` 
+- `npm run dev` will get Webpack to detect file changes. When there are, Webpack will automatically recompile all SASS and Typescript files.
+- For more info see section __?? Building__.
 
-Please respect a few rules:
 
-- Before making complex stuff, don't hesitate to open an issue first to discuss about it
-- Make the code readable and comment if needed
-- Make sure `npm run lint:sass && npm run lint:js` passes
+#### Now for the rules
 
-Then open a PR :)
+- After making any changes, especially complex ones, always run `npm run lint:ts` and `npm run lint:sass`. Also check that `npm run build` works.
+- Please conform to the code style used in Ravenode.
+- Remember to comment freely in the code - other people will need to understand what you just did.
+- Submit a pull request, specifying exactly what you did and why you did it.
 
-0.10.0
