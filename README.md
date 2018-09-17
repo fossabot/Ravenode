@@ -1,59 +1,90 @@
 ﻿# museeks
 
 [![Build Status](https://travis-ci.org/eligeorgios/Ravenode.svg?branch=master)](https://travis-ci.org/eligeorgios/Ravenode)
-[![Dependencies](https://david-dm.org/KeitIG/museeks.svg)](https://github.com/KeitIG/museeks)
-[![Gitter](https://badges.gitter.im/KeitIG/museeks.svg)](https://gitter.im/KeitIG/museeks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![dependencies Status](https://david-dm.org/eligeorgios/ravenode/status.svg)](https://david-dm.org/eligeorgios/ravenode)
+[![devDependencies Status](https://david-dm.org/eligeorgios/ravenode/dev-status.svg)](https://david-dm.org/eligeorgios/ravenode?type=dev)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)](https://github.com/eligeorgios/Ravenode/)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg)](https://github.com/eligeorgios/Ravenode/)
 
-A simple, clean and cross-platform music player. ([museeks.io](http://museeks.io))
+A minimalist music player forked from Museeks.io
 
 ![Screenshot](screenshot.png)
 
 It uses:
-* [Node.js](https://nodejs.org/en/) for back-end
-* [electron (used to be atom-shell)](https://github.com/atom/electron/) for embedded browser
-* [React.js](https://facebook.github.io/react/) as front-end framework and [Flux](https://facebook.github.io/flux/) with  [Redux](http://redux.js.org/) as data-flow pattern
+* [Node.js](https://nodejs.org/en/) as its javascript runtime,
+* [NPM](https://npmjs.com) as our package manager,
+* [Electron](https://github.com/atom/electron/) for our user interface,
+* [React](https://facebook.github.io/react/) to programmatically generate the user interface (sigh),
+* [Flux](https://facebook.github.io/flux/) and  
+* [Redux](http://redux.js.org/) as data-flow pattern, whatever that is.
 
 ---
 
-### Features
+### What's inside?
 
-Museeks aims to be a minimalistic and easy to use music player, you will not find tons of features. Here is a little preview though:
+Because Ravenode is meant to be a minimalistic music player, **you'll find some functionality, but no fancy features.** Here is a incomplete list of some of the features you''l find inside Ravenode
 
-- 💻 Cross-platform music player
-- ✨ Clean and polished
-- 🌟 Playlists
-- 🎼 Queue management
-- ➰ Shuffle, loop
-- 🌄 Covers support
-- 🤓 Dark theme
-- 🚤 Playback speed control
-- 😴 Sleep mode blocker
-- 🔊 Minimize to tray
-- 🎧 Supported formats: mp3, mp4, m4a/aac, flac, wav, ogg, 3gpp
+- ✨ Minimalistic and clean
+- 🌟 Playlists management
+- 🎶 Queue feature
+- ➰ Shuffle and loop
+- 😎 Dark theme
+- 📻 Playback speed control
+- 🛌 Sleep mode blocker
+- 💻 Play songs as a background app
+- 🎹 Supported formats: mp3, mp4, m4a/aac, flac, wav, ogg, 3gpp
+
+Special thanks to the creators of [Museeks](https://museeks.io/) for coding these features.
 
 ---
 
 ### Releases notes
 
-- [Over here!](https://github.com/KeitIG/museeks/releases)
+- [Over here!](https://github.com/eligeorgios/ravenode/releases)
 
 ---
 
 ### Installation
 
-#### Classic
+ All the unpacked binaries and installers are [over here](https://github.com/eligeorgios/ravenode/releases).
 
-Builds and installers can be found [on this page](https://github.com/KeitIG/museeks/releases).
+### Build
 
-#### Build (advanced)
+Remember that __branch `master` is unstable__ and may contain unfinished chunks of code or incomplete functions.
 
-Please consider that **`master` is unstable**.
+#### Configuring the environment
 
-- `git clone git@github.com:KeitIG/museeks.git`
-- `cd museeks`
-- `npm install`
-- `npm run build` or `npm run dev`
-- `npm run museeks` or `npm run museeks:debug`
+- Install [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com).
+
+#### 🏗 Building 
+
+Open the command line and type:
+- `cd <YOUR PROJECTS DIR>`
+- `git clone https://github.com/eligeorgios/ravenode.git`
+- `cd ravenode`
+- `npm i`
+- `npm run build` (for production) or `npm run dev` (for development)
+- `npm run ravenode` or `npm run museeks:dev`
+
+#### Packaging
+
+Assuming that you already followed the steps in section __Building__ and you already have a directory stuffed with all the Ravenode source files, you can use the below steps to package and create and installer for Ravenode.
+
+##### Windows
+
+Open the command line and type:
+- `cd ravenode` (cd to the Ravenode directory)
+- `npm i electron-builder`
+- `npm i electron-winstaller`
+- `npm run package:w` (this step packages Ravenode and creates a bunch of installers)
+- `npm run installer:w` (Optional step, this is for those that need a Squirrel.Windows installer - the NSIS and MSI installers were created in the last step)
+
+##### Mac OS X
+Open the command line and type:
+- `cd ravenode` (Go to project directory)
+- `npm i electron-packager`
+- `npm run package:m` (Only packages Ravenode, does not create the installer)
+- `npm run installer:m` (MUST be run on a computer running Mac OS X)
 
 ---
 
