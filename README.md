@@ -5,6 +5,7 @@
 [![devDependencies Status](https://david-dm.org/eligeorgios/ravenode/dev-status.svg)](https://david-dm.org/eligeorgios/ravenode?type=dev)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)](https://github.com/eligeorgios/Ravenode/)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg)](https://github.com/eligeorgios/Ravenode/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKiedtl%2FRavenode.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FKiedtl%2FRavenode?ref=badge_shield)
 
 A minimalist music player forked from Museeks.io
 
@@ -130,3 +131,7 @@ If you want to report a bug, first, thanks a lot, that helps us a lot. Please op
 - Remember to comment freely in the code - other people will need to understand what you just did.
 - Submit a pull request, specifying exactly what you did and why you did it.
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKiedtl%2FRavenode.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FKiedtl%2FRavenode?ref=badge_large)
